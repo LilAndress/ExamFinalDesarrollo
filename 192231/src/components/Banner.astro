@@ -1,0 +1,36 @@
+---
+import { Icon } from "astro-icon/components";
+
+export interface Props {
+  image1: string; 
+  image2: string; 
+}
+
+const { image1, image2 } = Astro.props;
+---
+<div class="h-[500px] mt-11 mx-auto flex w-11/12">
+  <div class="grid-cols-2 flex">
+   
+    <div class="rounded-3xl w-[1000px]">
+      <img class="rounded-2xl w-full h-[500px]" src={image1} alt="Imagen principal">
+    </div>
+    
+    <div class="w-[300px] ml-10">
+      <div class="rounded-3xl h-[250px]">
+        <img class="bg-cover bg-center bg-no-repeat rounded-3xl h-[250px]" src={image2} alt="Imagen secundaria">
+      </div>
+      <h2 class="mt-4 text-center text-blue-400 font-bold text-2xl">INTERFAZ WEB</h2>
+      <Icon class="absolute mt-5 ml-3" name="mdi:account-badge" width="24" height="24" />
+      <input class="mt-3 w-72 rounded-full flex p-2 text-center" placeholder="Ingrese algo">
+      <Icon class="absolute mt-5 ml-3" name="mdi:account-badge" width="24" height="24" />
+      <input class="mt-3 w-72 rounded-full flex p-2 text-center" placeholder="Ingrese algo">
+      <Icon class="absolute mt-5 ml-3" name="mdi:account-badge" width="24" height="24" />
+      <input class="mt-3 w-72 rounded-full flex p-2 text-center" placeholder="Ingrese algo">
+      <div class="justify-between flex mt-2 mx-auto">
+        <a class="py-2 px-3 bg-pink-300 rounded-full"><Icon name="mdi:arrow-up-drop-circle" width="24" height="24" /></a>
+        <a class="py-2 px-16 bg-blue-500 rounded-full text-white">Amor</a>
+        <a class="py-2 px-3 bg-blue-900 rounded-full"><Icon name="mdi:bell" width="24" height="24" /></a>
+      </div>
+    </div>
+  </div>
+</div>

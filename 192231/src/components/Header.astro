@@ -1,0 +1,45 @@
+---
+import { Icon } from "astro-icon/components"
+---
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body class="bg-blue-100">
+
+		<div class=" bg-white h-24 flex items-center">
+			<header class="container flex w-11/12 items-center mx-auto justify-between px-10">
+				<div class="flex items-center space-x-2">
+					<Icon name="mdi:home" style="font-size: 24px; color: blue;" />
+					<h1>INTERFAZ WEB </h1>
+
+				</div>
+				
+			  <menu class="flex items-center ml-10">
+				<ul class="flex items-center space-x-5 ">
+					<li><a>Astro</a> </li>
+					<li><a>Documentacion</a> </li>
+					<li><a>Integraciones</a> </li>
+					<li><a>Ejemplos</a> </li>
+					<li><a>Acerca de nosotros</a> </li>
+				</ul>
+	
+			</menu>
+			<menu class="">
+				<ul class="flex space-x-5 items-center text-white">
+					<li class="bg-blue-500 px-2 py-1 rounded-full "><a>Iniciar Sesion</a> </li>
+					<li class="bg-pink-400 px-2 py-1 rounded-full "><a>Registrarse</a> </li>
+				</ul>
+			</menu>
+			</header>
+		</div>
+		<slot />
+	</body>
+</html>

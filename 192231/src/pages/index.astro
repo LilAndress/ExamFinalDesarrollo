@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Icon } from "astro-icon/components"
+import Header from '../components/Header.astro';
+import Banner from '../components/Banner.astro';
+import Card from '../components/Card.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+   <Header/>
+   <div class="w-11/12 mx-auto">
+   <Banner image1="https://img.freepik.com/foto-gratis/hermosa-vista-aerea-arquitectura-edificio-alrededor-ciudad-tokio-al-atardecer_74190-7536.jpg?t=st=1733451060~exp=1733454660~hmac=4ed2f4b5908cc791f6b9a6ab55389c016fc107475e944d4f1a99e15deacbc291&w=900"
+           image2='https://img.freepik.com/foto-gratis/montanas-seoraksan-estan-cubiertas-niebla-manana-amanecer-seul-corea_335224-313.jpg?ga=GA1.1.815378802.1732071126&semt=ais_hybrid'/>
+           
+  <div class="flex mt-7 grid-cols-4 mx-auto w-11/12 gap-5">
+     <Card title="HOLAAAA" buttonText="Ver mas"  image="https://img.freepik.com/vector-premium/fondo-escena-amarilla-verano-3d_317810-4653.jpg?t=st=1733436810~exp=1733437410~hmac=cfbd4535128757ffc7b3560c0f603bd7cef0fbff71609f9c8487fd746c688818" />
+     <Card title="HOLAAAA" buttonText="Ver mas"  image="https://img.freepik.com/fotos-premium/3d-render-arte-digital-fantasia-entorno-natural-papel-tapiz-alta-calidad_1048944-17359732.jpg?t=st=1733436810~exp=1733437410~hmac=cf2fb5dc7809ac73800c5936e6a5d900763e449f3cbbed9ec602d2a02ea9815c" />
+	 <Card title="HOLAAAA" buttonText="Ver mas" image="https://img.freepik.com/vector-premium/fondo-planeta-alienigena-habitable-mundo-ficcion_316839-3158.jpg?t=st=1733436810~exp=1733437410~hmac=fa1fb5db52d33b7877640face7da7532fc273cf99b911698e19f5ecfd5e47be6" />
+	 <Card title="HOLAAAA" buttonText="Ver mas" image="https://img.freepik.com/fotos-premium/pintura-acrilica-al-oleo-colorida-abstracta-flores-hojas-hermosa-pintura-al-oleo-ilustracion-flores-ilustraciones-fondo-flores_1048944-29616851.jpg?t=st=1733436810~exp=1733437410~hmac=aa61687929f17cb1ae31228f135c1245110c5bca35049d89bb08792e17729ad1" />
+	</div>
+	<div class="flex mt-7 grid-cols-4 mx-auto w-11/12 gap-5">
+		<Card title="HOLAAAA" buttonText="Ver mas"  image="https://img.freepik.com/vector-gratis/composicion-hielo-agrietado-artico-congelado-trozos-hielo-derretido-mar-contra-fondo-nubes-sol-ilustracion-vectorial_1284-81849.jpg?t=st=1733436810~exp=1733437410~hmac=816bd8c2f95e1473502f0b5426100a5be043199d4479917b6d61f99e1ef065a1" />
+		<Card title="HOLAAAA" buttonText="Ver mas" image="https://img.freepik.com/fotos-premium/ilustracion-representacion-3d-fondo-abstracto-tablero-pedestal-exhibicion-arte-maqueta-producto-decoracion-soporte-papel-tapiz_1048944-26389613.jpg?t=st=1733436810~exp=1733437410~hmac=7d49a4c026e16c28a557c45ac663e46e9dedd90d6251e40bf1fff4c47ca49895" />
+		<Card title="HOLAAAA" buttonText="Ver mas" image="https://img.freepik.com/fotos-premium/arboles-que-crecen-bosque_1048944-30368869.jpg?t=st=1733446761~exp=1733447361~hmac=c43be40ac2ad1bbe9bdaa07d81bca425e4014ebfc4b5b16ba0b3bb23cc99887b" />
+		<Card title="HOLAAAA" buttonText="Ver mas" image="https://img.freepik.com/foto-gratis/arreglo-comida-brasilena-deliciosa-endecha-plana_23-2148739218.jpg?ga=GA1.1.815378802.1732071126&semt=ais_hybrid" />
+	   </div>
+
+	</div>
+	
+</body>
+</html>
